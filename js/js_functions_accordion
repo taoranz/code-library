@@ -1,0 +1,14 @@
+// accordion
+
+$(function(){
+	
+	$("dt").on("click",function(e){
+
+		let id = $("dt").index(this);
+
+		console.dir($("dd")[id]);
+
+		$("dd").eq(id).fadeIn(300)
+			.siblings("dd").fadeOut(200)
+	})
+})
